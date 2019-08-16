@@ -8,7 +8,7 @@
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 </div>
-	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled:true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 		<a-assets>
 			<img id="01" src="images/01.png">
 			<img id="02" src="images/02.png">
@@ -40,11 +40,11 @@
 		</a-marker>
 
 		<!-- handle hiro marker -->
-		<a-marker type='pattern' url='./markers/01.patt'><a-image src="#01"></a-image></a-marker>
-		<a-marker type='pattern' url='./markers/02.patt'><a-image src="#02"></a-image></a-marker>
-		<a-marker type='pattern' url='./markers/03.patt'><a-image src="#03"></a-image></a-marker>
-		<a-marker type='pattern' url='./markers/04.patt'><a-image src="#04"></a-image></a-marker>
-		<a-marker type='pattern' url='./markers/05.patt'><a-image src="#05"></a-image></a-marker>
+		<a-marker-camera>type='pattern' url='./markers/01.patt'><a-image src="#01"></a-image></a-marker-camera>
+		<a-marker-camera>type='pattern' url='./markers/02.patt'><a-image src="#02"></a-image></a-marker-camera>
+		<a-marker-camera>type='pattern' url='./markers/03.patt'><a-image src="#03"></a-image></a-marker-camera>
+		<a-marker-camera>type='pattern' url='./markers/04.patt'><a-image src="#04"></a-image></a-marker-camera>
+		<a-marker-camera>type='pattern' url='./markers/05.patt'><a-image src="#05"></a-image></a-marker-camera>
 	
 		<!-- add a simple camera -->
 		<a-entity camera></a-entity>
